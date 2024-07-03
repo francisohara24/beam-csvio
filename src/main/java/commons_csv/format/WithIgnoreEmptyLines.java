@@ -1,4 +1,4 @@
-package csv_format;
+package commons_csv.format;
 
 public class WithIgnoreEmptyLines {
   public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package csv_format;
+package commons_csv.format;
 
 import org.apache.commons.csv.CSVFormat;
 

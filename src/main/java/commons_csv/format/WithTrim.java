@@ -1,11 +1,8 @@
-package csv_format;
+package commons_csv.format;
 
 import org.apache.commons.csv.CSVFormat;
-import org.apache.commons.csv.QuoteMode;
 
 import java.io.IOException;
-import java.io.StringReader;
-import java.util.Arrays;
 
 /**
  * Tests the function of {@link CSVFormat}'s withTrim() parameter.

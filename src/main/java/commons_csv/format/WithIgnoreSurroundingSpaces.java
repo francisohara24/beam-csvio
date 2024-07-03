@@ -1,9 +1,8 @@
-package csv_format;
+package commons_csv.format;
 
 import org.apache.commons.csv.CSVFormat;
 
 import java.io.IOException;
-import java.io.StringReader;
 
 /**
  * Tests the function of {@link CSVFormat}'s withIgnoreSurroundingSpaces() parameter.

@@ -1,6 +1,6 @@
-package csv_format;
+package beam;
 
-public class WithDelimiter {
+public class Main {
   public static void main(String[] args) {
 
   }
