@@ -1,21 +1,19 @@
 package csv_format;
 
 import org.apache.commons.csv.CSVFormat;
+import org.apache.commons.csv.CSVParser;
 
 import java.io.IOException;
-import java.io.StringReader;
 
 /**
  * Tests the function of {@link CSVFormat}'s withTrailingDelimeter() parameter.
  */
 public class WithTrailingDelimiter {
   public static void main(String[] args) throws IOException {
-    // What does withTrailingDelimiter() do?
     CSVFormat formatWithTrailingDelimiter = CSVFormat.DEFAULT.withDelimiter(',').withTrailingDelimiter();
     CSVFormat formatWithoutTrailingDelimiter = CSVFormat.DEFAULT.withDelimiter(',');
-    StringReader input1 = new StringReader("a,b,c,");
-    StringReader input2 = new StringReader("a,b,c,");
-    System.out.println(formatWithTrailingDelimiter.parse(input1).getRecords());
-    System.out.println(formatWithoutTrailingDelimiter.parse(input2).getRecords());
+    String input = "a,b,c,";
+    System.out.println("with:\n" + CSVParser.parse(input, formatWithTrailingDelimiter).getRecords());
+    System.out.println("without:\n" + CSVParser.parse(input, formatWithoutTrailingDelimiter).getRecords());
   }
 }
