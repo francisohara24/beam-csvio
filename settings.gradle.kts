@@ -1,2 +1,2 @@
-rootProject.name = "csvio-playground"
+rootProject.name = "beam-csvio"
 
