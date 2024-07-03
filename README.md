@@ -1,2 +1,2 @@
-# csvio-tests
-Contains test code for Apache Beam CSV IO and Apache Commons CSV.
+# beam-csvio
+Contains test code for Apache Beam CSV IO and it's dependencies.
