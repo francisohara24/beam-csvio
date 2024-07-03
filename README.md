@@ -1,2 +1,2 @@
-# csvio-playground
-Contains test code for Apache Beam CSV IO and its library dependencies.
+# csvio-tests
+Contains test code for Apache Beam CSV IO and Apache Commons CSV.
