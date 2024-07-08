@@ -11,7 +11,11 @@ public class WithAllowDuplicateHeaderNames {
         CSVFormat.DEFAULT.withAllowDuplicateHeaderNames(false).withHeader("foo", "bar");
 
     // will throw exception
-    CSVFormat formatWithDuplicateHeaderNames =
-        CSVFormat.DEFAULT.withAllowDuplicateHeaderNames(false).withHeader("foo", "foo");
+    try {
+      CSVFormat formatWithDuplicateHeaderNames =
+          CSVFormat.DEFAULT.withAllowDuplicateHeaderNames(false).withHeader("foo", "foo");
+    } catch (IllegalArgumentException e){
+      System.out.println("Exception thrown: " + e.getMessage());
+    }
   }
 }
