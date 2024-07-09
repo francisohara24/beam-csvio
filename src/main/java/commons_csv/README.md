@@ -1,4 +1,4 @@
-# commons_csv.format
+# commons_csv
 This package contains classes I wrote to test the behavior of each of the parameters of the `CSVFormat` class in Apache Commons CSV (v1.8).  
 The following `CSVFormat` parameters were tested:
 * `withAllowDuplicateHeaderNames(boolean allowDuplicateHeaderNames)`

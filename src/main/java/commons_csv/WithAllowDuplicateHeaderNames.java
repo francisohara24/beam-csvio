@@ -1,4 +1,4 @@
-package commons_csv.format;
+package commons_csv;
 
 import java.io.IOException;
 import org.apache.commons.csv.CSVFormat;

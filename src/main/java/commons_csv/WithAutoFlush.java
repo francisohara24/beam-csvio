@@ -1,12 +1,10 @@
-package commons_csv.format;
+package commons_csv;
 
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVPrinter;
 
 import java.io.IOException;
 import java.io.OutputStream;
-import java.io.PrintStream;
-import java.util.stream.Stream;
 
 public class WithAutoFlush {
   public static void main(String[] args) throws IOException {

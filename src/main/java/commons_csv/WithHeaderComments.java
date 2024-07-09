@@ -1,11 +1,8 @@
-package commons_csv.format;
+package commons_csv;
 
 import org.apache.commons.csv.CSVFormat;
-import org.apache.commons.csv.CSVParser;
-import org.apache.commons.csv.CSVPrinter;
 
 import java.io.IOException;
-import java.util.Arrays;
 
 public class WithHeaderComments {
   public static void main(String[] args) throws IOException {
