@@ -11,7 +11,6 @@ public class WithIgnoreEmptyLines {
     CSVFormat formatWithIgnoreEmptyLines = CSVFormat.newFormat(',').withIgnoreEmptyLines(true);
     String recordWithEmptyLine = "foo,bar,baz\n\n1,2,3";
 
-
     // Will result in two CSV records since empty line is ignored
     System.out.println(CSVParser.parse(recordWithEmptyLine,formatWithIgnoreEmptyLines).getRecords());
 
